@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRunner" project="solution" tests="6" started="6" failures="0" errors="4" ignored="3">
+  <testsuite name="test.testRunner" time="0.117">
+    <testsuite name="Feature: Display Project Info" time="0.01">
+      <testsuite name="Scenario: When a user launches gitHub sample app. Project information should be displayed on homepage" time="0.006" incomplete="true">
+        <error>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
+System info: host: 'LAXMANATHOME', ip: '192.168.226.1', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_121'
+Driver info: driver.version: AndroidDriver&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:161)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:64)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)&#13;
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)&#13;
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)&#13;
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)&#13;
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)&#13;
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:36)&#13;
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:114)&#13;
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:132)&#13;
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:92)&#13;
+	at steps.ADisplayActivities_Steps.github_sample_app_is_launched(ADisplayActivities_Steps.java:51)&#13;
+	at ✽.Given gitHub sample app is launched(ADisplayActivities.feature:8)&#13;
+&#13;
+</error>
+        <testcase name="Given gitHub sample app is launched" classname="Scenario: When a user launches gitHub sample app. Project information should be displayed on homepage" time="0.004">
+          <error>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
+System info: host: 'LAXMANATHOME', ip: '192.168.226.1', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_121'
+Driver info: driver.version: AndroidDriver&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:161)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:64)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)&#13;
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)&#13;
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)&#13;
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)&#13;
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)&#13;
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:36)&#13;
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:114)&#13;
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:132)&#13;
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:92)&#13;
+	at steps.ADisplayActivities_Steps.github_sample_app_is_launched(ADisplayActivities_Steps.java:51)&#13;
+	at ✽.Given gitHub sample app is launched(ADisplayActivities.feature:8)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When gitHub sample app is loaded" classname="Scenario: When a user launches gitHub sample app. Project information should be displayed on homepage" time="0.0" ignored="true"/>
+        <testcase name="Then Project activity is displayed on home page" classname="Scenario: When a user launches gitHub sample app. Project information should be displayed on homepage" time="0.001" ignored="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: Display Latest Project Activity" time="0.0">
+      <testsuite name="Scenario: When a user navigates from homepage to details page. Latest project activity should be displayed" time="0.0" incomplete="true">
+        <error>java.lang.NullPointerException&#13;
+	at steps.BDisplayActivityDetails_Steps.user_navigates_to_activity_details_page(BDisplayActivityDetails_Steps.java:66)&#13;
+	at ✽.When User navigates to activity details page(BDisplayActivityDetails.feature:9)&#13;
+&#13;
+</error>
+        <testcase name="Given User is on homepage of gitHub sample app" classname="Scenario: When a user navigates from homepage to details page. Latest project activity should be displayed" time="0.0"/>
+        <testcase name="When User navigates to activity details page" classname="Scenario: When a user navigates from homepage to details page. Latest project activity should be displayed" time="0.0">
+          <error>java.lang.NullPointerException&#13;
+	at steps.BDisplayActivityDetails_Steps.user_navigates_to_activity_details_page(BDisplayActivityDetails_Steps.java:66)&#13;
+	at ✽.When User navigates to activity details page(BDisplayActivityDetails.feature:9)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then Latest project activity should be displayed" classname="Scenario: When a user navigates from homepage to details page. Latest project activity should be displayed" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

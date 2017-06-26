@@ -7,8 +7,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+//import org.junit.Assert;
+//import org.junit.Test;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -16,10 +17,12 @@ import pages.*;
 public class sample {
 	
 		
+		@SuppressWarnings("rawtypes")
 		private static AndroidDriver driver;
 		public static pgHome pgHome;
 		public static pgDetail pgDetail;
 
+		@SuppressWarnings("rawtypes")
 		public static void main(String[] args) throws MalformedURLException, InterruptedException {
 
 			File classpathRoot = new File(System.getProperty("user.dir"));

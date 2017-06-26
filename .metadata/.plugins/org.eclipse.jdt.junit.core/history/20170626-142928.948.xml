@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRunner" project="solution" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="test.testRunner" time="10.408">
+    <testsuite name="Feature: Display Project Info" time="3.868">
+      <testsuite name="Scenario: When a user launches gitHub sample app. Project information should be displayed on homepage" time="3.868">
+        <testcase name="Given gitHub sample app is launched" classname="Scenario: When a user launches gitHub sample app. Project information should be displayed on homepage" time="3.39"/>
+        <testcase name="When gitHub sample app is loaded" classname="Scenario: When a user launches gitHub sample app. Project information should be displayed on homepage" time="0.477"/>
+        <testcase name="Then Project activity is displayed on home page" classname="Scenario: When a user launches gitHub sample app. Project information should be displayed on homepage" time="0.001"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: Display Latest Project Activity" time="6.325">
+      <testsuite name="Scenario: When a user navigates from homepage to details page. Latest project activity should be displayed" time="6.325">
+        <testcase name="Given User is on homepage of gitHub sample app" classname="Scenario: When a user navigates from homepage to details page. Latest project activity should be displayed" time="3.424"/>
+        <testcase name="When User navigates to activity details page" classname="Scenario: When a user navigates from homepage to details page. Latest project activity should be displayed" time="0.316"/>
+        <testcase name="Then Latest project activity should be displayed" classname="Scenario: When a user navigates from homepage to details page. Latest project activity should be displayed" time="2.585"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

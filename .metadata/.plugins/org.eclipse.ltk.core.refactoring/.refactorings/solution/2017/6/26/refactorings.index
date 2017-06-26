@@ -11,3 +11,8 @@
 1498444101131	Rename resource 'DisplayProjectInfo.feature'
 1498451357777	Rename resource 'DisplayProjectActivities.feature'
 1498451375560	Rename type 'DisplayProjectActivities_Steps'
+1498460601144	Rename resource 'DisplayActivities.feature'
+1498460608532	Rename resource 'DisplayActivityDetails.feature'
+1498460620691	Rename type 'DisplayActivities_Steps'
+1498460627334	Rename type 'DisplayActivityDetails_Steps'
+1498466002023	Delete element

@@ -1,0 +1,10 @@
+package utils;
+
+import io.appium.java_client.android.AndroidDriver;
+
+public class appiumDriverFactory {
+	
+	private static Map<String, AndroidDriver> drivers = new HashMap<String, AndroidDriver>();
+
+
+}
