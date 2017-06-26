@@ -1,0 +1,23 @@
+package steps;
+
+public class DisplayLatestProjectActivity_Steps {
+
+	@Given("^User is on homepage of gitHub sample app$")
+	public void user_is_on_homepage_of_gitHub_sample_app() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^User navigates to activity details page$")
+	public void user_navigates_to_activity_details_page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^Latest project activity should be displayed$")
+	public void latest_project_activity_should_be_displayed() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+	
+}

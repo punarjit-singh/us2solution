@@ -1,0 +1,60 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class pgHome {
+
+    @FindBy(id = "android.widget.TextView")
+    private WebElement textView;
+
+    @FindBy(id = "com.ustwo.sample:id/commit_list_button_refresh")
+    private WebElement btnRefresh;
+
+    @FindBy(id = "com.ustwo.sample:id/commit_list_textview_title")
+    private WebElement textViewTitle;
+
+    @FindBy(id = "com.ustwo.sample:id/commit_list_imageview_privacy_state")
+    private WebElement privacyState;
+
+    @FindBy(id = "com.ustwo.sample:id/commit_list_row_textview_message")
+    private WebElement textViewMsg;
+
+    @FindBy(id = "com.ustwo.sample:id/commit_list_row_textview_date")
+    private WebElement textViewDate;
+
+    public WebDriver driver;
+
+
+    public pgHome(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
+
+    public WebElement getTextView() {
+        return textView;
+    }
+
+    public WebElement getTextViewTitle() {
+        return textViewTitle;
+    }
+
+    public WebElement getPrivacyState() {
+        return privacyState;
+    }
+
+    public WebElement getListRefresh() {
+        return btnRefresh;
+    }
+
+    public WebElement getTextViewMsg() {
+        return textViewMsg;
+    }
+
+    public WebElement getTextViewDate() {
+        return textViewDate;
+    }
+
+}

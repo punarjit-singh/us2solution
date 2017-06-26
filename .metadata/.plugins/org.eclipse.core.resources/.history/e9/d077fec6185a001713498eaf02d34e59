@@ -1,0 +1,10 @@
+#Author: punarjit.singh@hotmail.com
+
+Feature: 2 Display Latest Project Activity
+	This feature is very important because it will allow users to view latest project activity
+
+Scenario: 2A When a user navigates from homepage to details page. Latest project activity should be displayed
+
+Given User is on homepage of gitHub sample app
+When User navigates to activity details page
+Then Latest project activity should be displayed

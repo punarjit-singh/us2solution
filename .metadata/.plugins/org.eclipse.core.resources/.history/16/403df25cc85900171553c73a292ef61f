@@ -1,0 +1,38 @@
+public class pgDetail {
+
+    @FindBy(id = 'com.ustwo.sample:id/commit_detail_textview_name')
+    private WebElement textViewName;
+
+    @FindBy(id = 'com.ustwo.sample:id/commit_detail_textview_email')
+    private WebElement textViewEmail;
+
+    @FindBy(id = 'com.ustwo.sample:id/commit_detail_textview_date')
+    private WebElement textViewDate;
+
+    @FindBy(id = 'com.ustwo.sample:id/commit_detail_textview_message')
+    private WebElement textViewMsg;
+
+    public WebDriver driver;
+
+
+    public pgDetail(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
+
+    public WebElement getTextViewName() {
+        return textViewName;
+    }
+
+    public WebElement getTextViewEmail() {
+        return textViewEmail;
+    }
+
+    public WebElement getTextViewDate() {
+        return textViewDate;
+    }
+
+    public WebElement getTextViewMsg() {
+        return textViewMsg;
+    }
+}

@@ -1,0 +1,25 @@
+package steps;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class DisplayProjectInfo_Steps {
+
+	@Given("^gitHub sample app is launched$")
+	public void github_sample_app_is_launched() throws Throwable {
+	 System.out.println("Running step - gitHub sample app is launched");
+	}
+
+	@When("^gitHub sample app is loaded$")
+	public void github_sample_app_is_loaded() throws Throwable {
+		System.out.println("Running step - gitHub sample app is loaded");
+	}
+
+	@Then("^Project activity is displayed on home page$")
+	public void project_activity_is_displayed_on_home_page() throws Throwable {
+		System.out.println("Running step - Project activity is displayed on home page");
+	}
+	
+}

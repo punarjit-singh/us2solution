@@ -1,0 +1,117 @@
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("DisplayLatestProjectActivity.feature");
+formatter.feature({
+  "comments": [
+    {
+      "line": 1,
+      "value": "#Author: punarjit.singh@hotmail.com"
+    }
+  ],
+  "line": 3,
+  "name": "Display Latest Project Activity",
+  "description": "This feature is very important because it will allow users to view latest project activity",
+  "id": "display-latest-project-activity",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 6,
+  "name": "When a user navigates from homepage to details page. Latest project activity should be displayed",
+  "description": "",
+  "id": "display-latest-project-activity;when-a-user-navigates-from-homepage-to-details-page.-latest-project-activity-should-be-displayed",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 8,
+  "name": "User is on homepage of gitHub sample app",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "User navigates to activity details page",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 10,
+  "name": "Latest project activity should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DisplayLatestProjectActivity_Steps.user_is_on_homepage_of_gitHub_sample_app()"
+});
+formatter.result({
+  "duration": 352897583,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DisplayLatestProjectActivity_Steps.user_navigates_to_activity_details_page()"
+});
+formatter.result({
+  "duration": 187305,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DisplayLatestProjectActivity_Steps.latest_project_activity_should_be_displayed()"
+});
+formatter.result({
+  "duration": 404117,
+  "status": "passed"
+});
+formatter.uri("DisplayProjectInfo.feature");
+formatter.feature({
+  "comments": [
+    {
+      "line": 1,
+      "value": "#Author: punarjit.singh@hotmail.com"
+    }
+  ],
+  "line": 3,
+  "name": "Display Project Info",
+  "description": "This feature is very important because it will allow users to view project information",
+  "id": "display-project-info",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 6,
+  "name": "When a user launches gitHub sample app. Project information should be displayed on homepage",
+  "description": "",
+  "id": "display-project-info;when-a-user-launches-github-sample-app.-project-information-should-be-displayed-on-homepage",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 8,
+  "name": "gitHub sample app is launched",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "gitHub sample app is loaded",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 10,
+  "name": "Project activity is displayed on home page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DisplayProjectInfo_Steps.github_sample_app_is_launched()"
+});
+formatter.result({
+  "duration": 369478,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DisplayProjectInfo_Steps.github_sample_app_is_loaded()"
+});
+formatter.result({
+  "duration": 506750,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DisplayProjectInfo_Steps.project_activity_is_displayed_on_home_page()"
+});
+formatter.result({
+  "duration": 207831,
+  "status": "passed"
+});
+});

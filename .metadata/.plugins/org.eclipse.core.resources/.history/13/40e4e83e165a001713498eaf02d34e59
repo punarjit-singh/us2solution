@@ -1,0 +1,69 @@
+package steps;
+
+import cucumber.api.Scenario;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import io.appium.java_client.android.AndroidDriver;
+
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import pages.*;
+
+public class DisplayLatestProjectActivity_Steps {
+	
+	public static AndroidDriver driver;
+	public static pgHome pgHome;
+	public static pgDetail pgDetail;
+	
+	@Before
+    public void setUp(Scenario scenario) throws Exception {
+
+		File classpathRoot = new File(System.getProperty("user.dir"));
+		
+		File appDir = new File(classpathRoot, "/apk/");
+		File app = new File(appDir, "app-sample.apk");
+
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability(CapabilityType.BROWSER_NAME, "Android");
+		capabilities.setCapability("deviceName", "solutionDevice");
+		capabilities.setCapability("platformVersion", "6.0");
+		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("app", app.getAbsolutePath());
+		capabilities.setCapability("appPackage", "com.ustwo.sample");
+		capabilities.setCapability("appActivity", "com.ustwo.sample.CommitListActivity");
+
+		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+		
+		pgHome = new pgHome(driver);
+		pgDetail = new pgDetail(driver);
+		
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+    }
+
+	@Given("^User is on homepage of gitHub sample app$")
+	public void user_is_on_homepage_of_gitHub_sample_app() throws Throwable {
+	    System.out.println("Running Step - User is on homepage of gitHub sample app");
+	}
+
+	@When("^User navigates to activity details page$")
+	public void user_navigates_to_activity_details_page() throws Throwable {
+		System.out.println("Running Step - User navigates to activity details page");
+	}
+
+	@Then("^Latest project activity should be displayed$")
+	public void latest_project_activity_should_be_displayed() throws Throwable {
+		System.out.println("Running Step - Latest project activity should be displayed");
+	}
+	
+}
