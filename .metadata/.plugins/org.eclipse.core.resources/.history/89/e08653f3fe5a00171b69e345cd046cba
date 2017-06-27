@@ -1,0 +1,11 @@
+#Author: punarjit.singh@hotmail.com
+
+Feature: Activity List Display on Homepage
+	As a user I want to view latest project activity listed on ustwo app homepage
+
+Scenario: As a user I launch ustwo sample app
+  Latest project activity should be displayed on homepage
+
+Given I launch ustwo sample app
+When ustwo sample app is loaded
+Then I see latest project activity listed on ustwo app homepage

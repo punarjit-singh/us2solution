@@ -20,35 +20,36 @@ public class BDisplayActivityDetails_Steps {
 	public static pgDetail pgDetail;
 	public static DesiredCapabilities capabilities;
 	
-	@Given("^User is on homepage of gitHub sample app$")
-	public void user_is_on_homepage_of_gitHub_sample_app() throws Throwable {
+	@Given("^I am on ustwo sample app homepage$")
+	public void i_am_on_ustwo_sample_app_homepage() throws Throwable {
 		driver = appiumDriverFactory.getAndroidDriver();
 	 	pgHome = new pgHome(driver);
 		pgDetail = new pgDetail(driver);
-	    System.out.println("Running Step - User is on homepage of gitHub sample app");
+	    System.out.println("\nGiven I am on ustwo sample app homepage");
 	    Assert.assertEquals("US2FormValidator", pgHome.getTextView().getText());
-	    
 	}
 
-	@When("^User navigates to activity details page$")
-	public void user_navigates_to_activity_details_page() throws Throwable {
-		System.out.println("Running Step - User navigates to activity details page");
-		System.out.println(pgHome.getTextViewMsg());
+	@When("^I navigate to activity details page$")
+	public void i_navigate_to_activity_details_page() throws Throwable {
+		System.out.println("\nWhen I navigate to activity details page");
 		pgHome.getTextViewMsg().click();
 		Assert.assertEquals("Full Cycle App Testing Sample", pgDetail.getTextView().getText());
 	}
 
-	@Then("^Latest project activity should be displayed$")
-	public void latest_project_activity_should_be_displayed() throws Throwable {
-		System.out.println("Running Step - Latest project activity should be displayed");
-		
-		System.out.println("Checking Name");
+	@Then("^I see project activity details$")
+	public void i_see_project_activity_details() throws Throwable {
+		System.out.println("\nThen I see project activity details");
+		System.out.println("\n-------- Details page assertions --------");
+		System.out.println("Checking visibility of Name element");
 		Assert.assertEquals("Martin Stolz", pgDetail.getTextViewName().getText());
-		System.out.println("Checking Email");
+		
+		System.out.println("Checking visibility of Email element");
 		Assert.assertEquals("martin@ustwo.co.uk", pgDetail.getTextViewEmail().getText());
-		System.out.println("Checking Date");
+		
+		System.out.println("Checking visibility of Date element");
 		Assert.assertEquals("2013-11-29T17:04:08Z", pgDetail.getTextViewDate().getText());
-		System.out.println("Checking Message");
+		
+		System.out.println("Checking visibility of Message element");
 		Assert.assertEquals("Added analytics", pgDetail.getTextViewMsg().getText());	
 	}
 	

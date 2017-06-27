@@ -1,0 +1,65 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class pgDetail {
+
+    @FindBy(className = "android.widget.TextView")
+    private WebElement textView;
+	
+    @FindBy(id = "com.ustwo.sample:id/commit_detail_textview_name")
+    private WebElement textViewName;
+
+    @FindBy(id = "com.ustwo.sample:id/commit_detail_textview_email")
+    private WebElement textViewEmail;
+
+    @FindBy(id = "com.ustwo.sample:id/commit_detail_textview_date")
+    private WebElement textViewDate;
+
+    @FindBy(id = "com.ustwo.sample:id/commit_detail_textview_message")
+    private WebElement textViewMsg;
+
+    public WebDriver driver;
+    
+    public void isLoaded() throws Error {
+        // Initial loading, called when creating the page object to make sure that the page is loaded to a 
+    	//state where it is ready to interact with us, in our case it means that textView is present in DOM and visible.
+        waitForVisibility(textView);
+    }
+    
+    private void waitForVisibility(WebElement element) throws Error {
+        new WebDriverWait(driver, 60)
+             .until(ExpectedConditions.visibilityOf(element));
+   }
+
+    public pgDetail(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+        isLoaded();
+    }
+    
+    public WebElement getTextView() {
+        return textView;
+    }
+    
+    public WebElement getTextViewName() {
+        return textViewName;
+    }
+
+    public WebElement getTextViewEmail() {
+        return textViewEmail;
+    }
+
+    public WebElement getTextViewDate() {
+        return textViewDate;
+    }
+
+    public WebElement getTextViewMsg() {
+        return textViewMsg;
+    }
+}

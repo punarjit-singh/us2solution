@@ -1,0 +1,85 @@
+package pages;
+
+import java.util.concurrent.TimeUnit;
+
+import io.appium.java_client.android.AndroidDriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.FluentWait;
+
+import com.google.common.base.Function;
+
+public class pgDetail {
+
+    @FindBy(className = "android.widget.TextView")
+    private WebElement textView;
+	
+    @FindBy(id = "com.ustwo.sample:id/commit_detail_textview_name")
+    private WebElement textViewName;
+
+    @FindBy(id = "com.ustwo.sample:id/commit_detail_textview_email")
+    private WebElement textViewEmail;
+
+    @FindBy(id = "com.ustwo.sample:id/commit_detail_textview_date")
+    private WebElement textViewDate;
+
+    @FindBy(id = "com.ustwo.sample:id/commit_detail_textview_message")
+    private WebElement textViewMsg;
+
+    public WebDriver driver;
+
+    public pgDetail(AndroidDriver driver) {
+        this.driver = driver;
+        
+        FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+ 			   .withTimeout(10, TimeUnit.SECONDS)
+ 			   .pollingEvery(300, TimeUnit.MILLISECONDS)
+ 			   .ignoring(NoSuchElementException.class);
+        
+        Function<AndroidDriver, WebElement> function = new Function<AndroidDriver, WebElement>(){	
+			WebElement element;
+			@Override
+			public WebElement apply(AndroidDriver arg0) {
+				System.out.println("Finding Element");
+					element = arg0.findElement(By.name("us_name"));
+					if(element.isDisplayed() && element.isEnabled()) {
+						System.out.println("Element Found");
+						System.out.println("@name= " + element.getAttribute("name"));
+						return element;
+					} else {
+						System.out.println("Element not found");
+						return null;
+					}
+				}
+		};
+        
+		wait.until(function);
+		
+        PageFactory.initElements(driver, this);
+    }
+    
+    public WebElement getTextView() {
+        return textView;
+    }
+    
+    public WebElement getTextViewName() {
+        return textViewName;
+    }
+
+    public WebElement getTextViewEmail() {
+        return textViewEmail;
+    }
+
+    public WebElement getTextViewDate() {
+        return textViewDate;
+    }
+
+    public WebElement getTextViewMsg() {
+        return textViewMsg;
+    }
+}

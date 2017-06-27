@@ -21,32 +21,35 @@ public class ADisplayActivities_Steps {
 	public static pgDetail pgDetail;
 	public static DesiredCapabilities capabilities;
 
-	@Given("^gitHub sample app is launched$")
-	public void github_sample_app_is_launched() throws Throwable {
-	 System.out.println("Running step - gitHub sample app is launched");
-	 
-	 driver = appiumDriverFactory.getAndroidDriver();
-	 
-	 	pgHome = new pgHome(driver);
-		pgDetail = new pgDetail(driver);
+	@Given("^I launch ustwo sample app$")
+	public void i_launch_ustwo_sample_app() throws Throwable {
+		System.out.println("Given I launch ustwo sample app"); 
+		 driver = appiumDriverFactory.getAndroidDriver();
+		 pgHome = new pgHome(driver);
+		 pgDetail = new pgDetail(driver);
 	}
 
-	@When("^gitHub sample app is loaded$")
-	public void github_sample_app_is_loaded() throws Throwable {
-		System.out.println("Running step - gitHub sample app is loaded");
+	@When("^ustwo sample app is loaded$")
+	public void ustwo_sample_app_is_loaded() throws Throwable {
+		System.out.println("\nWhen ustwo sample app is loaded");
 		Assert.assertEquals("US2FormValidator", pgHome.getTextView().getText());
 	}
 
-	@Then("^Project activity is displayed on home page$")
-	public void project_activity_is_displayed_on_home_page() throws Throwable {
-		System.out.println("Running step - Project activity is displayed on home page");
-		System.out.println("Checking element Refresh");
+	@Then("^I see latest project activity listed on homepage$")
+	public void i_see_latest_project_activity_listed_on_ustwo_app_homepage() throws Throwable {
+		System.out.println("\nThen I see latest project activity listed on homepage");
+		
+		System.out.println("\n-------- Homepage assertions --------");
+		System.out.println("Checking visibility of Refresh element");
 		Assert.assertNotNull(pgHome.getListRefresh());
-		System.out.println("Checking element TextViewTitle");
+		
+		System.out.println("Checking visibility of TextViewTitle element");
 		Assert.assertEquals("Form validation framework for iOS.", pgHome.getTextViewTitle().getText());
-		System.out.println("Checking element TextViewMessage");
+		
+		System.out.println("Checking visibility of TextViewMessage element");
 		Assert.assertEquals("Added analytics", pgHome.getTextViewMsg().getText());
-		System.out.println("Checking element TextViewDate");
+		
+		System.out.println("Checking visibility of TextViewDate element");
 		Assert.assertEquals("2013-11-29T17:04:08Z", pgHome.getTextViewDate().getText());
 	}
 		

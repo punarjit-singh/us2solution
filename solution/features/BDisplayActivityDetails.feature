@@ -1,10 +1,12 @@
 #Author: punarjit.singh@hotmail.com
 
 Feature: Display Latest Project Activity
-	This feature is very important because it will allow users to view latest project activity
+  In order to test activity details on details page
+  As a registered user I want to view project activity details on details page
 
-Scenario: When a user navigates from homepage to details page. Latest project activity should be displayed
+Scenario: As a user I navigate from homepage to details page 
+  Activity details should be displayed on details page
 
-Given User is on homepage of gitHub sample app
-When User navigates to activity details page
-Then Latest project activity should be displayed
+Given I am on ustwo sample app homepage
+When I navigate to activity details page
+Then I see project activity details
