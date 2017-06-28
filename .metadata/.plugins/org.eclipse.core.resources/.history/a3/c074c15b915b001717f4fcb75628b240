@@ -7,6 +7,6 @@ Feature: Display Latest Project Activity
 Scenario: As a user I navigate from homepage to details page 
   Activity details should be displayed on details page
 
-Given I am on github sample app homepage
+Given I am on ustwo sample app homepage
 When I navigate to activity details page
 Then I see project activity details

@@ -7,6 +7,6 @@ Feature: Activity List on Homepage
 Scenario: As a user I launch github sample app
   Latest project activity should be displayed on homepage
 
-Given I launch github sample app
-When github sample app is loaded
+Given I launch ustwo sample app
+When ustwo sample app is loaded
 Then I see latest project activity listed on homepage

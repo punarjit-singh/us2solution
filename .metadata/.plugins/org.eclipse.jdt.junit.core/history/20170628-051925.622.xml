@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRunner" project="solution" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="test.testRunner" time="45.063">
+    <testsuite name="Feature: Activity List on Homepage" time="25.608">
+      <testsuite name="Scenario: As a user I launch github sample app" time="25.608">
+        <testcase name="Given I launch github sample app" classname="Scenario: As a user I launch github sample app" time="23.566"/>
+        <testcase name="When github sample app is loaded" classname="Scenario: As a user I launch github sample app" time="2.04"/>
+        <testcase name="Then I see latest project activity listed on homepage" classname="Scenario: As a user I launch github sample app" time="0.002"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: Display Latest Project Activity" time="19.162">
+      <testsuite name="Scenario: As a user I navigate from homepage to details page" time="19.162">
+        <testcase name="Given I am on ustwo sample app homepage" classname="Scenario: As a user I navigate from homepage to details page" time="16.115"/>
+        <testcase name="When I navigate to activity details page" classname="Scenario: As a user I navigate from homepage to details page" time="1.62"/>
+        <testcase name="Then I see project activity details" classname="Scenario: As a user I navigate from homepage to details page" time="1.427"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

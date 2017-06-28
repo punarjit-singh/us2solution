@@ -32,6 +32,8 @@ public class pgHome {
     public pgHome(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, 20), this);
+
+        //PageFactory.initElements(driver, this);
     }
 
     public WebElement getTextView() {

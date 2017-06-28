@@ -20,12 +20,12 @@ public class BDisplayActivityDetails_Steps {
 	public static pgDetail pgDetail;
 	public static DesiredCapabilities capabilities;
 	
-	@Given("^I am on github sample app homepage$")
-	public void i_am_on_github_sample_app_homepage() throws Throwable {
+	@Given("^I am on ustwo sample app homepage$")
+	public void i_am_on_ustwo_sample_app_homepage() throws Throwable {
 		driver = appiumDriverFactory.getAndroidDriver();
 	 	pgHome = new pgHome(driver);
 		pgDetail = new pgDetail(driver);
-	    System.out.println("\nGiven I am on github sample app homepage");
+	    System.out.println("\nGiven I am on ustwo sample app homepage");
 	    Assert.assertEquals("US2FormValidator", pgHome.getTextView().getText());
 	}
 

@@ -27,7 +27,9 @@ public class pgDetail {
 
     public pgDetail(WebDriver driver) {
         this.driver = driver;
+        
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, 20), this);
+        //PageFactory.initElements(driver, this);
     }
     
     public WebElement getTextView() {

@@ -21,22 +21,22 @@ public class ADisplayActivities_Steps {
 	public static pgDetail pgDetail;
 	public static DesiredCapabilities capabilities;
 
-	@Given("^I launch github sample app$")
-	public void i_launch_github_sample_app() throws Throwable {
-		 System.out.println("Given I launch github sample app"); 
+	@Given("^I launch ustwo sample app$")
+	public void i_launch_ustwo_sample_app() throws Throwable {
+		System.out.println("Given I launch ustwo sample app"); 
 		 driver = appiumDriverFactory.getAndroidDriver();
 		 pgHome = new pgHome(driver);
 		 pgDetail = new pgDetail(driver);
 	}
 
-	@When("^github sample app is loaded$")
-	public void github_sample_app_is_loaded() throws Throwable {
-		System.out.println("\nWhen github sample app is loaded");
+	@When("^ustwo sample app is loaded$")
+	public void ustwo_sample_app_is_loaded() throws Throwable {
+		System.out.println("\nWhen ustwo sample app is loaded");
 		Assert.assertEquals("US2FormValidator", pgHome.getTextView().getText());
 	}
 
 	@Then("^I see latest project activity listed on homepage$")
-	public void i_see_latest_project_activity_listed_on_github_app_homepage() throws Throwable {
+	public void i_see_latest_project_activity_listed_on_ustwo_app_homepage() throws Throwable {
 		System.out.println("\nThen I see latest project activity listed on homepage");
 		
 		System.out.println("\n-------- Homepage assertions --------");
